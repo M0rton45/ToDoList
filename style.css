@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.toDo,
+.done,
+.toDoContent,
+.doneContent {
+  border: 2px solid black;
+  flex: 1;
+  text-align: center;
+}
+main {
+  max-width: 80vw;
+  margin: auto;
+}
+h1,
+p {
+  text-align: center;
+}
+.con,
+.conContent {
+  display: flex;
+}
+.conContent {
+  height: 75vh;
+}
