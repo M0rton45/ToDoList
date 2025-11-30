@@ -8,20 +8,22 @@
   </head>
   <body>
     <header>
-      <h1>This is ToDoList think about things you wanna do</h1>
-      <p>
-        Add thing you wanna do <input type="text" id="iDo" />
-        <input type="button" value="Add" id="addBtn" />
+      <h1>Welcome to ToDoList</h1>
+      <p class="data">
+        Add thing you wanna do <input type="text" id="iDo" class="inputText" />
+        <input type="button" value="Add" id="addBtn" class="btn" />
       </p>
     </header>
     <main>
-      <div class="con">
-        <div class="toDo"><h2>Here is things to do</h2></div>
-        <div class="done"><h2>Here is done things</h2></div>
-      </div>
-      <div class="conContent">
-        <div class="toDoContent"><p>Do something</p></div>
-        <div class="doneContent"><p>Done something</p></div>
+      <div class="countainer">
+        <div class="con">
+          <div class="toDoTasks"><h2>ToDo</h2></div>
+          <div class="doneTasks"><h2>Done</h2></div>
+        </div>
+        <div class="conContent">
+          <div class="toDoContent"></div>
+          <div class="doneContent"></div>
+        </div>
       </div>
     </main>
     <footer></footer>

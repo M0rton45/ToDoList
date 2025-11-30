@@ -3,16 +3,69 @@
   padding: 0;
   box-sizing: border-box;
 }
-.toDo,
-.done,
+html {
+  min-height: 100vh;
+  background: #293233;
+  background: radial-gradient(
+    circle,
+    rgba(41, 50, 51, 1) 67%,
+    rgba(38, 217, 229, 1) 96%
+  );
+  color: #26d9e5;
+  font-family: Andale Mono, monospace;
+}
+input {
+  border: none;
+  color: #26d9e5;
+  background-color: #293233;
+  font-size: 15px;
+}
+.inputText {
+  border: 2px solid #26d9e5;
+  border-radius: 5px;
+  width: 11vw;
+  padding: 5px;
+}
+.btn {
+  font-weight: bold;
+}
+.countainer {
+  /* background: #ff3c00;
+  background: linear-gradient(
+    270deg,
+    rgba(255, 60, 0, 1) 0%,
+    rgba(166, 255, 0, 1) 100%
+  ); */
+  background: #0059ff;
+  background: linear-gradient(
+    270deg,
+    rgba(0, 89, 255, 1) 19%,
+    rgba(0, 195, 255, 1) 100%
+  );
+  border-radius: 30px;
+  margin: 0 0 10vh 0;
+}
+.toDoTasks,
+.doneTasks,
 .toDoContent,
 .doneContent {
-  border: 2px solid black;
   flex: 1;
   text-align: center;
+  max-width: 100%;
+  min-width: 0;
+}
+
+.task {
+  max-width: 100%;
+  word-wrap: break-word;
+  white-space: normal;
+  overflow-wrap: break-word;
+  font-size: 20px;
+  color: #293233;
+  padding: 10px;
 }
 main {
-  max-width: 80vw;
+  max-width: 55vw;
   margin: auto;
 }
 h1,
@@ -24,5 +77,16 @@ p {
   display: flex;
 }
 .conContent {
-  height: 75vh;
+  min-height: 55vh;
+  /* min-height: 50px; */
+}
+h1 {
+  padding: 30px 0 15px 0;
+}
+h2 {
+  color: #293233;
+  padding: 5px;
+}
+.data {
+  padding: 15px 0 40px 0;
 }
